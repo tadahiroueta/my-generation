@@ -19,7 +19,7 @@ export default function RootLayout({ children }: Readonly<{children: React.React
   return (
     <html lang="en">
       <body className={`${pangolin.variable} antialiased`}>
-        <div className="flex min-h-lvh font-sans py-20">
+        <div className="flex min-h-lvh font-sans py-20 justify-center">
           <Background />
           {children}
         </div>
