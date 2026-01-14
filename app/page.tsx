@@ -1,6 +1,8 @@
 import { getPublicList } from "@/app/actions";
 import Stroke from "@/components/Stroke";
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
   const list = await getPublicList();
 

@@ -1,12 +1,10 @@
-import {
-  getPrivateList,
-  toggleCompleteListItem,
-  deleteListItem
-} from "@/app/actions";
+import { getPrivateList } from "@/app/actions";
 
 import AdminItem from "@/components/AdminItem";
 import NewItemForm from "@/components/NewItemForm";
 import Stroke from "@/components/Stroke";
+
+export const dynamic = 'force-dynamic';
 
 export default async function Home() {
   const list = await getPrivateList();
